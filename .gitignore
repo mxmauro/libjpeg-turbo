@@ -12,3 +12,8 @@ depcomp
 install-sh
 ltmain.sh
 missing
+*.~*
+*.suo
+*.user
+/obj/
+/Libs/

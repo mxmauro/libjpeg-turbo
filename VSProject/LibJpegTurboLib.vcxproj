@@ -1,0 +1,1218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\jaricom.c" />
+    <ClCompile Include="..\jcapimin.c" />
+    <ClCompile Include="..\jcapistd.c" />
+    <ClCompile Include="..\jcarith.c" />
+    <ClCompile Include="..\jccoefct.c" />
+    <ClCompile Include="..\jccolext.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\jccolor.c" />
+    <ClCompile Include="..\jcdctmgr.c" />
+    <ClCompile Include="..\jchuff.c" />
+    <ClCompile Include="..\jcinit.c" />
+    <ClCompile Include="..\jcmainct.c" />
+    <ClCompile Include="..\jcmarker.c" />
+    <ClCompile Include="..\jcmaster.c" />
+    <ClCompile Include="..\jcomapi.c" />
+    <ClCompile Include="..\jcparam.c" />
+    <ClCompile Include="..\jcphuff.c" />
+    <ClCompile Include="..\jcprepct.c" />
+    <ClCompile Include="..\jcsample.c" />
+    <ClCompile Include="..\jctrans.c" />
+    <ClCompile Include="..\jdapimin.c" />
+    <ClCompile Include="..\jdapistd.c" />
+    <ClCompile Include="..\jdarith.c" />
+    <ClCompile Include="..\jdatadst-tj.c" />
+    <ClCompile Include="..\jdatadst.c" />
+    <ClCompile Include="..\jdatasrc-tj.c" />
+    <ClCompile Include="..\jdatasrc.c" />
+    <ClCompile Include="..\jdcoefct.c" />
+    <ClCompile Include="..\jdcol565.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\jdcolext.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\jdcolor.c" />
+    <ClCompile Include="..\jddctmgr.c" />
+    <ClCompile Include="..\jdhuff.c" />
+    <ClCompile Include="..\jdinput.c" />
+    <ClCompile Include="..\jdmainct.c" />
+    <ClCompile Include="..\jdmarker.c" />
+    <ClCompile Include="..\jdmaster.c" />
+    <ClCompile Include="..\jdmerge.c" />
+    <ClCompile Include="..\jdmrg565.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\jdmrgext.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\jdphuff.c" />
+    <ClCompile Include="..\jdpostct.c" />
+    <ClCompile Include="..\jdsample.c" />
+    <ClCompile Include="..\jdtrans.c" />
+    <ClCompile Include="..\jerror.c" />
+    <ClCompile Include="..\jfdctflt.c" />
+    <ClCompile Include="..\jfdctfst.c" />
+    <ClCompile Include="..\jfdctint.c" />
+    <ClCompile Include="..\jidctflt.c" />
+    <ClCompile Include="..\jidctfst.c" />
+    <ClCompile Include="..\jidctint.c" />
+    <ClCompile Include="..\jidctred.c" />
+    <ClCompile Include="..\jmemmgr.c" />
+    <ClCompile Include="..\jmemnobs.c" />
+    <ClCompile Include="..\jquant1.c" />
+    <ClCompile Include="..\jquant2.c" />
+    <ClCompile Include="..\jsimd_none.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\jstdhuff.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\jutils.c" />
+    <None Include="..\simd\jcgryext-altivec.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <ClCompile Include="..\simd\jsimd_i386.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\simd\jsimd_x86_64.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\transupp.c" />
+    <ClCompile Include="..\turbojpeg.c" />
+    <None Include="jsimdcfg.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cderror.h" />
+    <ClInclude Include="..\cdjpeg.h" />
+    <ClInclude Include="..\jchuff.h" />
+    <ClInclude Include="..\jdcoefct.h" />
+    <ClInclude Include="..\jdct.h" />
+    <ClInclude Include="..\jdhuff.h" />
+    <ClInclude Include="..\jdmainct.h" />
+    <ClInclude Include="..\jdmaster.h" />
+    <ClInclude Include="..\jdsample.h" />
+    <ClInclude Include="..\jerror.h" />
+    <ClInclude Include="..\jinclude.h" />
+    <ClInclude Include="..\jmemsys.h" />
+    <ClInclude Include="..\jmorecfg.h" />
+    <ClInclude Include="..\jpegcomp.h" />
+    <ClInclude Include="..\jpegint.h" />
+    <ClInclude Include="..\jpeglib.h" />
+    <ClInclude Include="..\jpeg_nbits_table.h" />
+    <ClInclude Include="..\jsimd.h" />
+    <ClInclude Include="..\jsimddct.h" />
+    <ClInclude Include="..\jversion.h" />
+    <ClInclude Include="..\simd\jcsample.h" />
+    <ClInclude Include="..\simd\jsimd.h" />
+    <ClInclude Include="..\simd\jsimdcfg.inc.h" />
+    <ClInclude Include="..\transupp.h" />
+    <ClInclude Include="..\turbojpeg.h" />
+    <ClInclude Include="jconfig.h" />
+    <ClInclude Include="jconfigint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\simd\jccolext-mmx.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jccolext-sse2-64.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jccolext-sse2.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\simd\jccolor-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jccolor-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jccolor-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jcgray-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jcgray-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jcgray-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="..\simd\jcgryext-mmx.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jcgryext-sse2-64.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jcgryext-sse2.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\simd\jchuff-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jchuff-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="..\simd\jcolsamp.inc" />
+    <CustomBuild Include="..\simd\jcsample-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jcsample-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jcsample-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="..\simd\jdcolext-mmx.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jdcolext-sse2-64.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jdcolext-sse2.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\simd\jdcolor-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jdcolor-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jdcolor-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="..\simd\jdct.inc" />
+    <CustomBuild Include="..\simd\jdmerge-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jdmerge-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jdmerge-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="..\simd\jdmrgext-mmx.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jdmrgext-sse2-64.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\simd\jdmrgext-sse2.asm">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\simd\jdsample-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jdsample-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jdsample-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctflt-3dn.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctflt-sse-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctflt-sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctfst-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctfst-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctfst-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctint-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctint-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jfdctint-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctflt-3dn.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctflt-sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctflt-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctflt-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctfst-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctfst-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctfst-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctint-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctint-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctint-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctred-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctred-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jidctred-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="..\simd\jpeg_nbits_table.inc" />
+    <CustomBuild Include="..\simd\jquant-3dn.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jquant-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jquant-sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jquantf-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jquantf-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jquanti-sse2-64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jquanti-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin64 -DWIN64 -D__x86_64__</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\simd\jsimdcpu.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CALL "$(ProjectDir)Nasm\invoke_nasm.bat" "%(FullPath)" "$(IntDir)%(Filename).obj" -fwin32 -DWIN32</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling assembly code...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="..\simd\jsimdext.inc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F11D4732-0094-43E9-AA55-0D2F4C90E2C5}</ProjectGuid>
+    <RootNamespace>LibJpegTurboLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Libs\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\$(PlatformName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Libs\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\$(PlatformName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\Libs\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\$(PlatformName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\Libs\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>..\obj\$(PlatformName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
