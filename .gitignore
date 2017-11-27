@@ -17,3 +17,4 @@ missing
 *.user
 /obj/
 /Libs/
+/VSProject/.vs/
